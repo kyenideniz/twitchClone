@@ -50,7 +50,7 @@ model Stream {
 
   @@index([userId])
   @@index([ingressId])
-  @@index([name])
+  @@fulltext([name])
 }
 
 model Follow {
